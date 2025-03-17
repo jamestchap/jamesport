@@ -1,0 +1,141 @@
+{
+  "main": {
+    "name": {
+      "first": "James",
+      "last": "Chapman"
+    },
+    "logo": true,
+    "titles": ["Portfolio.", "Full-Stack Developer.", "Brisbane, Queensland."],
+    "headings": {
+      "about": "About",
+      "skills": "Skills",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    }
+  },
+  "about": {
+    "bio": "I'm a Full-Stack Developer with a passion for creating and learning. I have experience in TypeScript, C#, .NET, SQL, API Creation, PostgreSQL, AWS, and JavaScript. I'm always looking for new opportunities to grow and learn.",
+    "facts": [
+      { "name": "Hometown", "value": "Brisbane, QLD" },
+      {
+        "name": "Languages",
+        "value": "TypeScript, C#, .NET, Python, PostgreSQL, AWS, JavaScript"
+      },
+      { "name": "Age", "value": "25" },
+      { "name": "Interests", "value": "Music, Movies, Bouldering" }
+    ]
+  },
+  "skills": {
+    "defaultCategory": "Programming",
+
+    "categories": [
+      {
+        "category": "Programming",
+        "faClass": "fas fa-code",
+        "skillList": [
+          {
+            "name": "TypeScript",
+            "level": "100"
+          },
+          {
+            "name": "C#",
+            "level": "80"
+          },
+          {
+            "name": "Python",
+            "level": "30"
+          },
+          {
+            "name": "PostgreSQL",
+            "level": "60"
+          },
+          {
+            "name": "AWS",
+            "level": "70"
+          },
+          {
+            "name": "JavaScript",
+            "level": "100"
+          },
+          {
+            "name": "CSS",
+            "level": "80"
+          },
+          {
+            "name": "HTML",
+            "level": "100"
+          }
+        ]
+      }
+    ]
+  },
+  "portfolio": {
+    "defaultFilter": "music",
+    "projects": [
+      {
+        "title": "Peaceful Valley",
+        "description": "S1E8",
+        "image": "peacefulvalley.png",
+        "filter": "music"
+      },
+      {
+        "title": "Meadow Lake",
+        "description": "S2E1",
+        "image": "meadowlake.png",
+        "filter": "music"
+      },
+      {
+        "title": "Final Grace",
+        "description": "S2E13",
+        "image": "finalgrace.png",
+        "filter": "music"
+      },
+      {
+        "title": "Purple Splendor",
+        "description": "S4E1",
+        "image": "purplesplendor.png",
+        "filter": "movies"
+      },
+      {
+        "title": "Winter Stillness",
+        "description": "S5E4",
+        "image": "winterstillness.png",
+        "filter": "movies"
+      },
+      {
+        "title": "Grey Winter",
+        "description": "S7E11",
+        "image": "greywinter.png",
+        "filter": "movies"
+      }
+    ]
+  },
+  "contact": {
+    "formTitle": "Send Me A Message",
+    "formEndPoint": "",
+    "city": "Brisbane, Queensland",
+    "email": "jamesthomaschapman99@gmail.com",
+    "resumeLink": "",
+    "form": true,
+
+    "social": [
+      {
+        "name": "linkedin",
+        "url": "https://twitter.com/bobrossofficial",
+        "faClass": "fab fa-twitter"
+      },
+      {
+        "name": "facebook",
+        "url": "https://www.facebook.com/TheJoyofPaintingWithBobRoss/",
+        "faClass": "fab fa-facebook-f"
+      },
+      {
+        "name": "instagram",
+        "url": "https://www.instagram.com/bobross_thejoyofpainting/",
+        "faClass": "fab fa-instagram"
+      }
+    ]
+  },
+  "footer": {
+  }
+}
