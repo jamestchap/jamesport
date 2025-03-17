@@ -4,6 +4,9 @@ import data from "../../data/data.json";
 
 const heading = ref(data.main.headings.portfolio);
 const showAlienTitle = ref(false);
+
+// NOTE:
+// Still a work in progress.
 </script>
 
 <template>
