@@ -10,6 +10,7 @@
       "about": "About",
       "skills": "Skills",
       "portfolio": "Portfolio",
+      "showcase": "Creative Showcase",
       "contact": "Contact"
     }
   },
@@ -26,45 +27,45 @@
     ]
   },
   "skills": {
-    "defaultCategory": "Programming",
-
+    "defaultCategory": "Languages & Frameworks",
     "categories": [
       {
-        "category": "Programming",
+        "category": "Languages & Frameworks",
         "faClass": "fas fa-code",
         "skillList": [
-          {
-            "name": "TypeScript",
-            "level": "100"
-          },
-          {
-            "name": "C#",
-            "level": "80"
-          },
-          {
-            "name": "Python",
-            "level": "30"
-          },
-          {
-            "name": "PostgreSQL",
-            "level": "60"
-          },
-          {
-            "name": "AWS",
-            "level": "70"
-          },
-          {
-            "name": "JavaScript",
-            "level": "100"
-          },
-          {
-            "name": "CSS",
-            "level": "80"
-          },
-          {
-            "name": "HTML",
-            "level": "100"
-          }
+          { "name": "TypeScript", "level": "100" },
+          { "name": "JavaScript", "level": "100" },
+          { "name": "C#", "level": "80" },
+          { "name": ".NET", "level": "75" },
+          { "name": "Angular", "level": "70" },
+          { "name": "Python", "level": "30" }
+        ]
+      },
+      {
+        "category": "Back-end Development",
+        "faClass": "fas fa-cogs",
+        "skillList": [
+          { "name": "API Creation", "level": "85" },
+          { "name": "gRPC", "level": "70" },
+          { "name": "Protobuf", "level": "65" },
+          { "name": "SQL", "level": "70" },
+          { "name": "PostgreSQL", "level": "60" }
+        ]
+      },
+      {
+        "category": "Cloud & DevOps",
+        "faClass": "fas fa-cloud",
+        "skillList": [
+          { "name": "AWS", "level": "70" },
+          { "name": "SharePoint Development", "level": "60" }
+        ]
+      },
+      {
+        "category": "Design & UI",
+        "faClass": "fas fa-palette",
+        "skillList": [
+          { "name": "HTML", "level": "100" },
+          { "name": "CSS", "level": "80" }
         ]
       }
     ]
@@ -117,7 +118,6 @@
     "email": "jamesthomaschapman99@gmail.com",
     "resumeLink": "",
     "form": true,
-
     "social": [
       {
         "name": "linkedin",
@@ -133,6 +133,30 @@
         "name": "instagram",
         "url": "https://www.instagram.com/bobross_thejoyofpainting/",
         "faClass": "fab fa-instagram"
+      }
+    ]
+  },
+  "showcase": {
+    "items": [
+      {
+        "id": 1,
+        "title": "Alien Title Sequence in CSS",
+        "description": "A recreation of the iconic Alien movie title sequence using only HTML and CSS animations. Explores advanced CSS techniques for visual effects.",
+        "date": "2024-03-15",
+        "type": "Creative Coding",
+        "imageUrl": "src/assets/images/portfolio/alien-sequence-preview.jpg",
+        "link": "#portfolio",
+        "tags": ["CSS", "Animation", "Movies"]
+      },
+      {
+        "id": 2,
+        "title": "Exploring Predictive Models",
+        "description": "An ongoing research project into machine learning predictive models. This placeholder will be updated with findings and potential applications.",
+        "date": "2024-04-01",
+        "type": "Machine Learning",
+        "imageUrl": "src/assets/images/portfolio/ml-research-preview.jpg",
+        "link": "",
+        "tags": ["Python", "AI", "Research"]
       }
     ]
   },

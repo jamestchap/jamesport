@@ -39,27 +39,27 @@ const setCategory = (event: Event) => {
       <h1 class="section-header">{{ heading }}</h1>
 
       <!-- start of filters  -->
-<!--      <div class="row filters">-->
-<!--        <ul-->
-<!--            class="list-inline mx-auto"-->
-<!--            data-aos="fade-right"-->
-<!--            data-aos-duration="1000"-->
-<!--        >-->
-<!--          <li-->
-<!--              v-for="item in skills"-->
-<!--              :key="item.category"-->
-<!--              class="list-inline-item filter"-->
-<!--          >-->
-<!--            <a-->
-<!--                class="nav-item"-->
-<!--                :class="{ active: item.category === currentCategory }"-->
-<!--                :data-category="item.category"-->
-<!--                @click="setCategory"-->
-<!--            >{{ item.category }}</a-->
-<!--            >-->
-<!--          </li>-->
-<!--        </ul>-->
-<!--      </div>-->
+      <div class="row filters">
+        <ul
+            class="list-inline mx-auto"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+        >
+          <li
+              v-for="item in skills"
+              :key="item.category"
+              class="list-inline-item filter"
+          >
+            <a
+                class="nav-item"
+                :class="{ active: item.category === currentCategory }"
+                :data-category="item.category"
+                @click="setCategory"
+            >{{ item.category }}</a
+            >
+          </li>
+        </ul>
+      </div>
       <!-- end of filters  -->
 
       <!-- start of skill container  -->
