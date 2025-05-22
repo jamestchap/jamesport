@@ -146,7 +146,8 @@
         "type": "Creative Coding",
         "imageUrl": "src/assets/images/portfolio/alien-sequence-preview.jpg",
         "link": "#portfolio",
-        "tags": ["CSS", "Animation", "Movies"]
+        "tags": ["CSS", "Animation", "Movies"],
+        "detailedPageId": "alien-sequence-details"
       },
       {
         "id": 2,
@@ -159,6 +160,31 @@
         "tags": ["Python", "AI", "Research"]
       }
     ]
+  },
+  "projectDetails": {
+    "alien-sequence-details": {
+      "id": "alien-sequence-details",
+      "title": "Deep Dive: Alien Title Sequence in CSS",
+      "introduction": "A detailed look into the recreation of the iconic Alien movie title sequence using only HTML and CSS.",
+      "inspiration": {
+        "text": "Inspired by the masterful opening credits of Ridley Scott's 1979 film 'Alien'.",
+        "movieTitle": "Alien (1979)"
+      },
+      "technicalDeepDive": [
+        {
+          "heading": "Breaking Down the Animation",
+          "content": "Placeholder content about how the letter animations were conceived and implemented using CSS clip-paths and keyframes."
+        },
+        {
+          "heading": "Font and Atmosphere",
+          "content": "Placeholder content about choosing the right font and creating the background."
+        }
+      ],
+      "whatILearned": "Placeholder content about learnings from this project, such as advanced CSS animation techniques and attention to visual detail.",
+      "technologiesUsed": ["HTML", "CSS", "JavaScript (for timing, if any)"],
+      "liveDemoLink": "#portfolio",
+      "sourceCodeLink": ""
+    }
   },
   "footer": {
   }
