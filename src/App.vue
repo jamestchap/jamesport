@@ -3,6 +3,7 @@ import Header from "./Vue/pages/Header.vue";
 import About from "./Vue/pages/About.vue";
 import Skills from "./Vue/pages/Skills.vue";
 import Portfolio from "./Vue/pages/Portfolio.vue";
+import Showcase from "./Vue/pages/Showcase.vue";
 import Contact from "./Vue/pages/Contact.vue";
 import Footer from "./Vue/pages/Footer.vue";
 </script>
@@ -13,6 +14,7 @@ import Footer from "./Vue/pages/Footer.vue";
     <About />
     <Skills />
     <Portfolio />
+    <Showcase />
     <Contact />
     <Footer />
   </div>
