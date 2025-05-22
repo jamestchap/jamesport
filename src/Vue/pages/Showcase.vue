@@ -12,6 +12,7 @@ interface ShowcaseItem {
   imageUrl?: string;
   link?: string;
   tags?: string[];
+  detailedPageId?: string; // Added for router link
 }
 
 const showcaseItems = ref<ShowcaseItem[]>(data.showcase.items);
@@ -26,12 +27,21 @@ const heading = ref<string>(data.main.headings.showcase);
       <div class="showcase-grid">
         <div class="showcase-card" v-for="item in showcaseItems" :key="item.id">
           <img v-if="item.imageUrl" :src="item.imageUrl" :alt="item.title" class="showcase-image" />
-          <h3>
-            <a v-if="item.link" :href="item.link" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
-            <template v-else>{{ item.title }}</template>
+          <h3 class="card-title">
+            <router-link v-if="item.detailedPageId" :to="{ name: 'ProjectDetail', params: { projectId: item.detailedPageId } }">
+              {{ item.title }}
+            </router-link>
+            <template v-else-if="item.link">
+              <a :href="item.link" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+            </template>
+            <template v-else>
+              {{ item.title }}
+            </template>
           </h3>
           <p class="meta-info">
-            <span class="type">{{ item.type }}</span> | <span class="date">{{ item.date }}</span>
+            <span class="card-type" v-if="item.type">{{ item.type }}</span>
+            <span class="separator" v-if="item.type && item.date"> | </span>
+            <span class="date" v-if="item.date">{{ item.date }}</span>
           </p>
           <p class="description">{{ item.description }}</p>
           <div class="tags" v-if="item.tags && item.tags.length">
@@ -46,16 +56,16 @@ const heading = ref<string>(data.main.headings.showcase);
 </template>
 
 <style scoped>
-.light-section {
+#showcase.light-section { /* More specific to override if needed */
   padding: 60px 0;
-  background-color: #f8f9fa; /* Or your desired light background color */
+  background-color: #2c2c2c; /* Dark gray background */
 }
-.section-header {
+#showcase h1.section-header { /* Target the header within this section */
   text-align: center;
   margin-bottom: 50px;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #333;
+  color: #f0f0f0; /* Light text color for the header */
 }
 .showcase-grid {
   display: grid;
@@ -99,9 +109,28 @@ const heading = ref<string>(data.main.headings.showcase);
   font-size: 0.9rem;
   color: #6c757d; /* Bootstrap muted text color */
   margin-bottom: 10px;
+  display: flex; /* Aligns type and date nicely if both are present */
+  align-items: center; /* Vertically align items if they wrap */
 }
-.meta-info .type {
-  font-weight: bold;
+.card-type {
+  display: inline-block;
+  padding: 0.25em 0.6em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: 0.375rem;
+  color: #fff;
+  background-color: #6c757d; /* Bootstrap secondary color, good for a badge */
+  margin-right: 0.5em; /* Space between type and separator/date */
+}
+.meta-info .date {
+  /* No specific style needed for date unless it needs to stand out more */
+}
+.meta-info .separator {
+  margin: 0 0.25em;
 }
 .description {
   font-size: 1rem;
